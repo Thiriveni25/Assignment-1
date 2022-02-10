@@ -1,0 +1,38 @@
+// youngest of age
+
+package assignment1;
+import java.util.Scanner;
+public class YoungestAge {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int ram, sulabh, ajay;
+
+		System.out.println("enter the age of ram");
+		ram=sc.nextInt();
+		System.out.println("enter the age of sulabh");
+		sulabh=sc.nextInt();
+		System.out.println("enter the age of ajay ");
+		ajay=sc.nextInt();
+
+		if (ram<sulabh)
+		{
+			if(ram<ajay)
+			{
+				System.out.println("Ram is the youngest");
+			}else
+			{
+				System.out.println("ajay is the youngest");
+			}
+			
+			
+		}
+		else if(sulabh<ajay) {
+			System.out.println("sulabh is the youngest");
+		}else
+		{
+			System.out.println("ajay is the youngest");
+		}
+	}
+} 

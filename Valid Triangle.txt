@@ -1,0 +1,31 @@
+// valid Triangle 
+
+package assignment;
+import java.util.Scanner;
+public class validTriangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a1,a2,a3,v1;
+		
+		System.out.println("enter the 3 angles of the triangle");
+		Scanner scan=new Scanner(System.in);
+		a1=scan.nextInt();
+		a2=scan.nextInt();
+		a3=scan.nextInt();
+		
+		v1=a1+a2+a3;
+		
+		if(v1==180)
+		{
+			System.out.println("This is valid Triangle");
+		
+		}
+		else
+		{
+			System.out.println("This is not valid Triangle");
+		}
+	}
+	
+
+} 

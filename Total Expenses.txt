@@ -1,0 +1,33 @@
+
+// Total expense
+
+package assignment;
+import java.util.Scanner;
+
+public class Expens {
+
+	public static void main(String[] args) {
+
+		int quantity;
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter how many items");
+		quantity=scan.nextInt();
+		System.out.println("Enter Baseprice of the item");
+		float Baseprice=scan.nextFloat();
+
+		float result,temp;
+		result=(quantity * Baseprice );
+
+
+		if(result>=5000 )
+		{
+			temp=result*(10.0f/100.0f);
+			result=result-temp;
+			System.out.println("payable amount is: "+result);
+		}
+		else
+		{
+			System.out.println("Payable amount is: "+result);
+		} }
+}
+

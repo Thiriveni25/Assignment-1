@@ -1,0 +1,31 @@
+// Gross Salary
+
+package assignment;
+import java.util.Scanner;
+public class salary {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float bsalary=0,gSalary=0,hra,da;
+		Scanner scan=new Scanner(System.in);
+		
+		System.out.println("Enter the basic salary");
+		bsalary=scan.nextFloat();
+		
+		if(bsalary<1500)
+		{
+			hra=(bsalary*(10.0f/100.0f));
+			da=(bsalary*(90.0f/100.0f));
+			
+		}
+		else
+		{
+			hra=500;
+			da=(bsalary*(98.0f/100.0f));
+			
+		}
+		gSalary=bsalary+hra+da;
+		System.out.println(gSalary);
+		}
+}  
+
